@@ -6,7 +6,7 @@ The R script *Number of Duck Eggs Laid by Day.R* uses the data from the CSV file
 
 ## The Story
 
-Let's fly to the GIF visualization first and then provide the background. 
+Let's fly to the GIF visualization first and then provide the background. The egg-laying data was collected from our four ducks.
 
 ![](GIF_of_Number_of_Duck_Eggs_Laid_by_Day.gif)
 
@@ -18,7 +18,7 @@ We raised our ducks from the time they were a few-day-old ducklings.  We picked 
 
 According to the American Poultry Association, white crested ducks lay 100-150 eggs per year, and khaki campbell ducks lay 250-340 eggs per year.
 
-### Our Ducks' Egg-Laying Timeline
+### Our Four Ducks' Egg-Laying Timeline
 
 * November 6:  Our ducks laid their first egg!
 * November 22: Our ducks laid their second egg!
