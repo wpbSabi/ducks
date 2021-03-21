@@ -20,17 +20,17 @@ According to the American Poultry Association, white crested ducks lay 100-150 e
 
 ### Our Ducks' Egg-Laying Timeline
 
-November 6:  Our ducks laid their first egg!
-November 22: Our ducks laid their second egg!
-December 13: Our ducks laid two eggs in one day!
-January 5:   The last day without any eggs laid.
-January 17:  The last day our ducks laid less than three eggs. 
-January 18:  Four eggs in one day for the first time!
-January 28:  Five eggs in one day (Four eggs the day before and after)!
-February 24: The start of a 14-day four-egg-laying streak!
-March 11: 	 Five eggs in one day (three eggs the day before and four after)!
+* November 6:  Our ducks laid their first egg!
+* November 22: Our ducks laid their second egg!
+* December 13: Our ducks laid two eggs in one day!
+* January 5:   The last day without any eggs laid.
+* January 17:  The last day our ducks laid less than three eggs. 
+* January 18:  Four eggs in one day for the first time!
+* January 28:  Five eggs in one day (Four eggs the day before and after)!
+* February 24: The start of a 14-day four-egg-laying streak!
+* March 11: 	 Five eggs in one day (three eggs the day before and four after)!
 
-### Five Eggs in One Day?
+### Five Eggs in One Day?  From Four Ducks?
 
 I had read that ducks and chickens lay at most an egg per day.  But experience taught me otherwise.  Therefore, I embarked on further research and found that our ducks were not unique in this regard.  Breeds such as our khaki campbells are known to sometimes lay more than one egg per day, until the young layers have their hormones stabilize. 
 
