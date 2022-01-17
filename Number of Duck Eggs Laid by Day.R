@@ -9,7 +9,25 @@ library(lubridate)
 library(magick)
 library(tidyverse)
 
-df <- read_csv('data_eggs_laid.csv') 
+df <- read_csv('data_eggs_laid.csv',
+               col_type = cols(day=col_integer(),
+                               date=col_date(format="%m/%d/%Y"),
+                               quantity=col_integer(),
+                               cumulative=col_integer()))
+
+### Verify there are no missing days; add a zero egg count on any missing days
+# Drop the day, as this will be recalculated
+df <- df %>% select(date, quantity, cumulative)
+# Create a data frame with all possible days to check for all days
+d <- as.Date(0:364, origin = "2021-01-01")
+d <- data.frame(d)
+# Add any missing dates and recalculate the day of the year and cumulative
+df_dates <- left_join(d, df, by=c('d'='date'))
+df_dates[is.na(df_dates)] <- 0
+df_dates$day <- seq.int(nrow(df_dates))
+df_dates$cumulative <- cumsum(df_dates$quantity)
+df <- df_dates
+###
 
 # Create the first plot, eggs laid by day
 p1 <- df %>% 
