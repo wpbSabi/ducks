@@ -10,7 +10,7 @@ library(lubridate)
 library(magick)
 library(tidyverse)
 
-df <- read_csv('data_eggs_laid.csv',
+df <- read_csv('data/data_eggs_laid.csv',
                col_type = cols(day=col_integer(),
                                date=col_date(format="%m/%d/%Y"),
                                quantity=col_integer(),
