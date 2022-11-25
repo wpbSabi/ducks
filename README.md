@@ -8,9 +8,9 @@ The R script *Number of Duck Eggs Laid by Day.R* uses the data from the CSV file
 
 Let's fly to the GIF visualization first and then provide the background. The egg-laying data was collected from our four ducks.
 
-![GIF Image](/images/daily_duck_egg_count.png)
+![GIF Image](/images/daily_duck_egg_count.gif)
 
-![Daily Duck Eggs GIF](https://github.com/wpbSabi/ducks/blob/main/images/daily_duck_egg_count.png)
+![Daily Duck Eggs GIF](https://github.com/wpbSabi/ducks/blob/main/images/daily_duck_egg_count.gif)
 
 
 ### Background: Duck Age
