@@ -20,7 +20,8 @@ df <- read_csv('data/data_eggs_laid.csv',
 # Drop the day, as this will be recalculated
 df <- df %>% select(date, quantity, cumulative)
 # Create a data frame with all possible days to check for all days
-d <- as.Date(0:364, origin = "2021-01-01")
+# d <- as.Date(0:364, origin = "2021-01-01")
+d <- as.Date(0:750, origin = "2020-11-01")
 d <- data.frame(d)
 # Add any missing dates and recalculate the day of the year and cumulative
 df_dates <- left_join(d, df, by=c('d'='date'))
