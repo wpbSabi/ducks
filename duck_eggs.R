@@ -43,7 +43,7 @@ p1 <- ggplot() +
              shape = 21,
              size = 3,
              color = 'black') +
-  scale_x_date(date_labels = "%b", breaks = "month") +
+  scale_x_date(date_labels = '%Y-%b', breaks = 'month') +
   theme_minimal() +
   theme(plot.title = element_textbox_simple(size = 15, 
                                             lineheight = 1, 
@@ -73,7 +73,7 @@ p2 <- ggplot() +
              shape = 21,
              size = 3,
              color = 'black') +
-  scale_x_date(date_labels = "%b", breaks = "month") +
+  scale_x_date(date_labels = '%Y-%b', breaks = 'month') +
   theme_minimal() +
   theme(plot.title = element_textbox(hjust = 0.5,
                                      size = 15, 
@@ -88,8 +88,14 @@ p2 <- ggplot() +
   transition_reveal(day)
 
 # Create the two GIFs and combine 
-a_gif <- animate(p1, width = 500, height = 500)
-b_gif <- animate(p2, width = 500, height = 500)
+a_gif <- animate(p1, 
+                 fps = 7,
+                 width = 500, 
+                 height = 500)
+b_gif <- animate(p2, 
+                 fps = 7,
+                 width = 500, 
+                 height = 500)
 a_mgif <- image_read(a_gif)
 b_mgif <- image_read(b_gif)
 new_gif <- image_append(c(a_mgif[1], b_mgif[1]))
@@ -97,13 +103,6 @@ for(i in 2:100){
   combined <- image_append(c(a_mgif[i], b_mgif[i]))
   new_gif <- c(new_gif, combined)
 }
-new_gif
-anim_save(filename="GIF_of_Number_of_Duck_Eggs_Laid_by_Day.gif", 
-          # nframes = 150,
-          nframes = 1,
-          animation = new_gif,
-          end_pause = 50, 
-          height = 1000,
-          width = 1000,
-          res = 120)
 
+anim_save(filename = 'images/daily_duck_egg_count.gif', 
+          animation = new_gif)

@@ -10,6 +10,9 @@ Let's fly to the GIF visualization first and then provide the background. The eg
 
 ![](GIF_of_Number_of_Duck_Eggs_Laid_by_Day.gif)
 
+![Daily Duck Eggs GIF](https://github.com/wpbSabi/ducks/blob/main/images/daily_duck_egg_count.png)
+
+
 ### Background: Duck Age
 
 We raised our ducks from the time they were a few-day-old ducklings.  We picked up two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  For the full story on how we chose these ducklings, please see my video (https://www.youtube.com/watch?v=-ETE7xfPkl4).
