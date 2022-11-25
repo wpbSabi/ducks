@@ -89,11 +89,13 @@ p2 <- ggplot() +
 
 # Create the two GIFs and combine 
 a_gif <- animate(p1, 
-                 fps = 7,
+                 fps = 5,
+                 end_pause = 5,
                  width = 500, 
                  height = 500)
 b_gif <- animate(p2, 
-                 fps = 7,
+                 fps = 5,
+                 end_pause = 5,
                  width = 500, 
                  height = 500)
 a_mgif <- image_read(a_gif)
