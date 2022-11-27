@@ -14,7 +14,8 @@ df <- read_csv('data/data_eggs_laid.csv',
                col_type = cols(day = col_integer(),
                                date = col_date(format="%m/%d/%Y"),
                                quantity = col_integer(),
-                               cumulative = col_integer()))
+                               cumulative = col_integer(),
+                               ducks = col_integer()))
 
 ### Verify there are no missing days; add a zero egg count on any missing days
 # Drop the day, as this will be recalculated
@@ -24,19 +25,26 @@ df <- df %>% select(date, quantity, cumulative)
 d <- as.Date(0:750, origin = "2020-11-01")
 d <- data.frame(d)
 # Add any missing dates and recalculate the day of the year and cumulative
-df_dates <- left_join(d, df, by = c('d'='date'))
+df_dates <- left_join(d, df, by = c('d' = 'date'))
 df_dates[is.na(df_dates)] <- 0
 df_dates$day <- seq.int(nrow(df_dates))
 df_dates$cumulative <- cumsum(df_dates$quantity)
 df <- df_dates
+# Update the number of ducks based on dates
+df$ducks[df$d < as.Date('2022-05-31')] <- 3 # little poof passed on 5/30
+df$ducks[df$d < as.Date('2021-07-06')] <- 4 # peaky passed on 7/5
+df$ducks[df$d >= as.Date('2022-05-31')] <- 2
 ###
+
+
 
 # Create the first plot, eggs laid by day
 p1 <- ggplot() +
   geom_line(data = df,
             aes(x = as.Date(day, origin = '2022-11-01'), y = quantity),
             size = 1,
-            color = 'pink') + 
+            color = df$ducks) +
+            # color = 'pink') + 
   geom_point(data = df,
              aes(x = as.Date(day, origin = '2022-11-01'), y = quantity),
              fill = 'pink',
@@ -66,7 +74,8 @@ p2 <- ggplot() +
   geom_line(data = df, 
             aes(x = as.Date(day, origin = '2022-11-01'), y = cumulative),
             size = 2,
-            color = 'pink') + 
+            color = df$ducks) +
+            # color = 'pink') + 
   geom_point(data = df,
              aes(x = as.Date(day, origin = '2022-11-01'), y = cumulative),
              fill = 'pink',
