@@ -14,8 +14,8 @@ df <- read_csv('data/data_eggs_laid.csv',
                col_type = cols(day = col_integer(),
                                date = col_date(format="%m/%d/%Y"),
                                quantity = col_integer(),
-                               cumulative = col_integer(),
-                               ducks = col_integer()))
+                               cumulative = col_integer())) %>%
+      select(-ducks)
 
 ### Verify there are no missing days; add a zero egg count on any missing days
 # Drop the day, as this will be recalculated
