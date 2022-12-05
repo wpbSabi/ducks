@@ -22,7 +22,7 @@ df <- read_csv('data/data_eggs_laid.csv',
 df <- df %>% select(date, quantity, cumulative)
 # Create a data frame with all possible days to check for all days
 # d <- as.Date(0:364, origin = "2021-01-01")
-d <- as.Date(0:750, origin = "2020-11-01")
+d <- as.Date(0:1000, origin = "2020-04-08")
 d <- data.frame(d)
 # Add any missing dates and recalculate the day of the year and cumulative
 df_dates <- left_join(d, df, by = c('d' = 'date'))
@@ -41,12 +41,12 @@ df$ducks[df$d >= as.Date('2022-05-31')] <- 2
 # Create the first plot, eggs laid by day
 p1 <- ggplot() +
   geom_line(data = df,
-            aes(x = as.Date(day, origin = '2022-11-01'), y = quantity),
+            aes(x = as.Date(day, origin = '2020-04-08'), y = quantity),
             size = 1,
             color = df$ducks) +
             # color = 'pink') + 
   geom_point(data = df,
-             aes(x = as.Date(day, origin = '2022-11-01'), y = quantity),
+             aes(x = as.Date(day, origin = '2020-04-08'), y = quantity),
              fill = 'pink',
              shape = 21,
              size = 3,
@@ -70,14 +70,13 @@ p1 <- ggplot() +
 
 # Create the 2nd plot, Cumulative eggs laid by day
 p2 <- ggplot() +
-  # ggplot(aes(x = as.Date(day, origin = '2022-11-01'), y = quantity)) + 
   geom_line(data = df, 
-            aes(x = as.Date(day, origin = '2022-11-01'), y = cumulative),
+            aes(x = as.Date(day, origin = '2020-04-08'), y = cumulative),
             size = 2,
             color = df$ducks) +
             # color = 'pink') + 
   geom_point(data = df,
-             aes(x = as.Date(day, origin = '2022-11-01'), y = cumulative),
+             aes(x = as.Date(day, origin = '2020-04-08'), y = cumulative),
              fill = 'pink',
              shape = 21,
              size = 3,
@@ -98,14 +97,14 @@ p2 <- ggplot() +
 
 # Create the two GIFs and combine 
 a_gif <- animate(p1, 
-                 fps = 5,
-                 end_pause = 5,
-                 width = 500, 
+                 fps = 2,
+                 end_pause = 10,
+                 width = 700, 
                  height = 500)
 b_gif <- animate(p2, 
-                 fps = 5,
-                 end_pause = 5,
-                 width = 500, 
+                 fps = 2,
+                 end_pause = 10,
+                 width = 700, 
                  height = 500)
 a_mgif <- image_read(a_gif)
 b_mgif <- image_read(b_gif)
