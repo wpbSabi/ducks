@@ -4,6 +4,7 @@
 # Description: Takes data, adds 0 value for any missing dates, and creates one GIF with two plots
 # Updated: November 2022
 
+library(cowplot)
 library(gganimate)
 library(ggtext)
 library(lubridate)
@@ -36,8 +37,6 @@ df$ducks[df$d < as.Date('2021-07-06')] <- 4 # peaky passed on 7/5
 df$ducks[df$d >= as.Date('2022-05-31')] <- 2
 ###
 
-
-
 # Create the first plot, eggs laid by day
 p1 <- ggplot() +
   geom_line(data = df,
@@ -61,11 +60,14 @@ p1 <- ggplot() +
         panel.grid.minor = element_blank(),
         axis.text.x = element_text(angle = 90, size = 12),
         axis.text.y = element_text(size = 12)) +
-  ggtitle("<b>Our Ducks Started Laying Eggs at 6 months of Age</b><br><span style = 'color:purple;'>75 days later,
-              they laid an egg almost every day</span>
-           <br><span style = 'color:blue;'>Even in January, February, and March!</span>") +
-  ylab('\n\n# Eggs laid by 4 ducks (per day)\n\n') + 
-  xlab('\n\nDays since ducks started laying eggs (Day 0 = November 5th)\n\n') +
+  ggtitle("<b>Our Ducks Started Laying Eggs at 6 months of Age</b>
+           <br><span style = 'color:blue;'>4 ducks (blue)</span>
+           <br><span style = 'color:darkgreen;'>3 ducks (green) </span>
+           <br><span style = 'color:red;'>2 ducks (red)</span>") +
+  xlab('\n\nDays since ducks started laying eggs (1st egg on November 5th, 2020)\n\n') +
+  ylab('\n\n# Eggs laid per day\n\n') + 
+  geom_vline(xintercept = as.Date('2021-01-01'), linetype = 'dotted', color = 'grey') +
+  geom_vline(xintercept = as.Date('2022-01-01'), linetype = 'dotted', color = 'grey') + 
   transition_reveal(day) 
 
 # Create the 2nd plot, Cumulative eggs laid by day
@@ -90,9 +92,14 @@ p2 <- ggplot() +
         panel.grid.minor = element_blank(),
         axis.text.x = element_text(angle = 90, size = 12),
         axis.text.y = element_text(size = 12)) +
-  ggtitle("\n<b>\nCumulative Eggs Laid</b></span>") +
-  ylab('\n\n# Cumulative Eggs Laid by 4 ducks (per day)\n\n') + 
-  xlab('\n\nDays since ducks started laying eggs (Day 0 = November 5th)\n\n')+
+  ggtitle("\n<b>\nCumulative Eggs Laid</b>
+          <br><span style = 'color:darkgrey;'>2020 (year 1): 14 eggs per duck</span>
+          <br><span style = 'color:darkgrey;'>2021 (year 2): 208 eggs per duck</span>
+           <br><span style = 'color:darkgrey;'>2022 (year 3): 189 eggs per duck</span>") +
+  xlab('\n\nDays since ducks started laying eggs (1st egg on November 5th, 2020)\n\n') +
+  ylab('\n\n# Cumulative Eggs Laid \n\n') + 
+  geom_vline(xintercept = as.Date('2021-01-01'), linetype = 'dotted', color = 'grey') +
+  geom_vline(xintercept = as.Date('2022-01-01'), linetype = 'dotted', color = 'grey') + 
   transition_reveal(day)
 
 # Create the two GIFs and combine 
