@@ -34,6 +34,6 @@ According to the American Poultry Association, white crested ducks lay 100-150 e
 
 I had read that ducks and chickens lay at most an egg per day.  But experience taught me otherwise.  Therefore, I embarked on further research and found that our ducks were not unique in this regard.  Breeds such as our khaki campbells are known to sometimes lay more than one egg per day, until the young layers have their hormones stabilize. 
 
-![](Chart_of_Number_of_Duck_Eggs_Laid_by_Day.png)
+![](images/Number_of_Duck_Eggs_Laid_by_Day.png)
 
 
