@@ -1,6 +1,5 @@
-# Author: Sabi Horvat, March 2021
+# Author: Sabi Horvat, January 2023
 # github: www.github.com/wpbsabi
-# twitter: @tourofdata - mobile.twitter.com/tourofdata
 # Description: Takes data, adds 0 value for any missing dates, and creates one GIF with two plots
 # Updated: November 2022
 
