@@ -56,3 +56,18 @@ colnames(df_table) = c("Year", "Jan","Feb","Mar",
                            "Apr","May","Jun",
                            "Jul","Aug","Sep",
                            "Oct","Nov","Dec")
+
+# Add a "Total" column for each year that sums the eggs from all months
+df_table$Total <- rowSums(df_table) - df_table$Year
+
+# Add an "Eggs_per_Duck" column that averages the eggs per year per duck
+df_table <- df_table %>% 
+  mutate(Eggs_per_Duck = round(ifelse(Year == 2020, Total / 4, 
+                                ifelse(Year == 2021, (Jan + Feb + Mar + Apr + May + Jun) / 4 +
+                                         (Jul + Aug + Sep + Oct + Nov + Dec) / 3, 
+                                       (Jan + Feb + Mar + Apr + May) / 3 +
+                                         (Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 2))))
+
+# View the table
+library(formattable)
+formattable(df_table)
