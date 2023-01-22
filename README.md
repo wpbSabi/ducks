@@ -1,24 +1,22 @@
-# Ducks Eggs 
+# Ducks eggs laid in our garden 🦆🥚
 
-## Number of Duck Eggs Laid by Day 🦆🥚
+## Background
 
-The R script *Number of Duck Eggs Laid by Day.R* uses the data from the CSV file *data_eggs_laid.csv* to generate the GIF with two plots *GIF of Number of Duck Eggs Laid by Day.gif*
-
-## The Story
-
-Let's fly to the GIF visualization first and then provide the background. The egg-laying data was collected from our four ducks.
-
-![GIF Image](/images/daily_duck_egg_count.gif)
-
-### Background: Duck Age
-
-We raised our ducks from the time they were a few-day-old ducklings.  We picked up two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  For the full story on how we chose these ducklings, please see my video (https://www.youtube.com/watch?v=-ETE7xfPkl4).
-
-### Background: Egg-laying by Duck Breed
+We brought home four few-day-old ducklings in 2020; two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  They started laying eggs in November and I've been collecting data on the quantity of eggs ever since.  
 
 According to the American Poultry Association:
 * White Crested ducks lay 100-150 eggs per year
 * Khaki Campbell ducks lay 250-340 eggs per year
+
+But the actual data are so much more interesting!
+
+## Number of eggs laid by day (2021 and 2022)
+
+The R script *Number of Duck Eggs Laid by Day.R* uses the data from the CSV file *data_eggs_laid.csv* to generate the GIF with two plots *GIF of Number of Duck Eggs Laid by Day.gif*
+
+The egg-laying data was collected from our four ducks.
+
+![GIF Image](/images/daily_duck_egg_count.gif)
 
 ### Our Four Ducks' Egg-Laying Timeline When They First Started Laying
 
