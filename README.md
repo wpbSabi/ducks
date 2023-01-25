@@ -16,6 +16,21 @@ But the actual data are so much more interesting!
 
 ![GIF 2021-2022](/images/daily_duck_egg_count.gif)
 
+### Our Four Ducks' Egg-Laying Timeline When They First Started Laying
+
+* November 6:  Our ducks laid their first egg!
+* November 22: Our ducks laid their second egg!
+* December 13: Our ducks laid two eggs in one day!
+* January 5:   The last day without any eggs laid.
+* January 17:  The last day our ducks laid less than three eggs. 
+* January 18:  Four eggs in one day for the first time!
+* January 28:  Five eggs in one day (Four eggs the day before and four eggs the day after)!
+* February 24: The start of a 14-day four-egg-laying streak!
+* March 11: 	 Five eggs in one day (three eggs the day before and four eggs the day after)!
+
+### Five Eggs in One Day?  From Four Ducks?
+
+I had read that ducks and chickens lay at most an egg per day.  But experience taught me otherwise.  Therefore, I embarked on further research and found that our ducks were not unique in this regard.  Breeds such as our khaki campbells are known to sometimes lay more than one egg per day, until the young layers have their hormones stabilize. 
 
 2. The R script `duck_eggs_table.R` provides a different view; the average number of eggs laid per duck by month.
 * These numbers are averaged over all of the ducks.  Although on many days we can tell which whether an egg came from a khaki or crested duck, it is not always obvious. 
@@ -33,22 +48,5 @@ But the actual data are so much more interesting!
 | 2022 | 109                             | 226                               |
 
 
-### Our Four Ducks' Egg-Laying Timeline When They First Started Laying
-
-* November 6:  Our ducks laid their first egg!
-* November 22: Our ducks laid their second egg!
-* December 13: Our ducks laid two eggs in one day!
-* January 5:   The last day without any eggs laid.
-* January 17:  The last day our ducks laid less than three eggs. 
-* January 18:  Four eggs in one day for the first time!
-* January 28:  Five eggs in one day (Four eggs the day before and four eggs the day after)!
-* February 24: The start of a 14-day four-egg-laying streak!
-* March 11: 	 Five eggs in one day (three eggs the day before and four eggs the day after)!
-
-### Five Eggs in One Day?  From Four Ducks?
-
-I had read that ducks and chickens lay at most an egg per day.  But experience taught me otherwise.  Therefore, I embarked on further research and found that our ducks were not unique in this regard.  Breeds such as our khaki campbells are known to sometimes lay more than one egg per day, until the young layers have their hormones stabilize. 
-
-![](images/Number_of_Duck_Eggs_Laid_by_Day.png)
 
 
