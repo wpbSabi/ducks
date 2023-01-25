@@ -21,20 +21,22 @@ But the actual data are so much more interesting!
 >I had read that ducks and chickens lay at most an egg per day.  But experience taught me otherwise.  Therefore, I embarked on further research and found that our ducks were not unique in this regard.  Breeds such as our khaki campbells are known to sometimes lay more than one egg per day, until the young layers have their hormones stabilize. 
 
 2. The R script `duck_eggs_table.R` provides a different view; the average number of eggs laid per duck by month.
-* These numbers are averaged over all of the ducks.  Although on many days we can tell which whether an egg came from a khaki or crested duck, it is not always obvious. 
-* These numbers account for the numbers of ducks we had each month, as two of our ducks passed away before 2023 (both suddently- one due to yolk coelimitis and the other to an unknown cause such eating something poisonous to ducks or flu).
 
 ![GIF Image](/images/eggs_per_duck.png)
 
+>* These numbers are averaged over all of the ducks.  Although on many days we can tell which whether an egg came from a khaki or crested duck, it is not always obvious. 
+>* These numbers account for the numbers of ducks we had each month, as two of our ducks passed away before 2023 (both suddently- one due to yolk coelimitis and the other to an unknown cause such eating something poisonous to ducks or flu).
+
+
 3. The following data points can provide some inference regarding the number of eggs laid by khakis versus crested ducks
-* It is likely that our khakis laid less than the typically range, implying that they are not pure breeds
-* It is likely that our cresteds laid within the expected range
 
 | Year | Days with at least one egg laid | Days where every duck laid an egg |
 |------|---------------------------------|-----------------------------------|
 | 2021 | 110                             | 254                               |
 | 2022 | 109                             | 226                               |
 
+>* It is likely that our khakis laid less than the typically range, implying that they are not pure breeds
+>* It is likely that our cresteds laid within the expected range
 
 
 
