@@ -30,10 +30,10 @@ But the actual data are so much more interesting!
 
 3. The following data points can provide some inference regarding the number of eggs laid by khakis versus crested ducks
 
-| Year | Days with at least one egg laid | Days where every duck laid an egg |
-|------|---------------------------------|-----------------------------------|
-| 2021 | 110                             | 254                               |
-| 2022 | 109                             | 226                               |
+| Year | Days where every duck laid an egg | Days with at least one egg laid |
+|------|-----------------------------------|---------------------------------|
+| 2021 | 110                               | 254                             |
+| 2022 | 109                               | 226                             |
 
 >* It is likely that our khakis laid less than the typically range, implying that they are not pure breeds
 >* It is likely that our cresteds laid within the expected range
