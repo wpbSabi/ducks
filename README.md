@@ -16,7 +16,7 @@ But the actual data are so much more interesting!
 
 ![GIF 2021-2022](/images/daily_duck_egg_count.gif)
 
->Five Eggs in One Day?  From Four Ducks?
+>Five Eggs in One Day? From Four Ducks?
 >
 >I had read that ducks and chickens lay at most an egg per day.  But experience taught me otherwise.  Therefore, I embarked on further research and found that our ducks were not unique in this regard.  Breeds such as our khaki campbells are known to sometimes lay more than one egg per day, until the young layers have their hormones stabilize. 
 
