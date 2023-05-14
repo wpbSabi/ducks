@@ -9,18 +9,18 @@ We brought home four few-day-old ducklings in 2020; two white crested ducks on A
 | Duck Breeds            | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
 |------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 2020                   |
-| White Crested Ducks    | 0   |     |     | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   |
-| Khaki Campbell Ducks   | 0   |     |     | 0   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 
-|------------------------|
+| White Crested Ducks    | 0   | 0   | 0   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   |
+| Khaki Campbell Ducks   | 0   | 0   | 0   | 0   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 
+|-------------------
 | 2021  
 | White Crested Ducks    | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   |
 | Khaki Campbell Ducks   | 2   | 2   | 2   | 2   | 2   | 2   | 1   | 1   | 1   | 1   | 1   | 1   |
-|------------------------|
+|-------------------
 | 2022  
 | White Crested Ducks    | 2   | 2   | 2   | 2   | 2   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 | Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 | Khaki / Buff Mix Ducks | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 3   | 3   | 
-|------------------------|
+|-------------------
 | 2023
 | White Crested Ducks    | 1   | 1   | 1   | 1   | 1   |
 | Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   |
