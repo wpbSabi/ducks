@@ -12,12 +12,16 @@ df <- read_csv('data/data_eggs_laid.csv',
                                cumulative = col_integer())) %>%
       select(-ducks)
 
+# replace null values with 0
+df$quantity[is.na(df$quantity)] = 0
+
+
 ### Verify there are no missing days; add a zero egg count on any missing days
 # Drop the day, as this will be recalculated
 df <- df %>% select(date, quantity, cumulative)
 # Create a data frame with all possible days to check for all days
 # d <- as.Date(0:364, origin = "2021-01-01")
-d <- as.Date(0:1000, origin = "2020-04-08")
+d <- as.Date(0:2000, origin = "2020-04-08")
 d <- data.frame(d)
 # Add any missing dates and recalculate the day of the year and cumulative
 df_dates <- left_join(d, df, by = c('d' = 'date'))
@@ -28,7 +32,9 @@ df <- df_dates
 # Update the number of ducks based on dates
 df$ducks[df$d < as.Date('2022-05-31')] <- 3 # little poof passed on 5/30
 df$ducks[df$d < as.Date('2021-07-06')] <- 4 # peaky passed on 7/5
-df$ducks[df$d >= as.Date('2022-05-31')] <- 2
+df$ducks[df$d < as.Date('2023-01-01')] <- 2 # roundy and big poof
+df$ducks[df$d >= as.Date('2023-01-01')] <- 5 # + strawberry, blueberry, and lightning
+
 ###
 
 # Add month and year by data
@@ -40,7 +46,7 @@ df <- df %>% arrange(month)
 
 # Create a table that aggregates eggs laid by month (columns) and year (rows)
 df_table <- df %>% 
-  filter(year != 2023) %>%
+  filter(year < 2024) %>%
   select(year, month, quantity) %>%
   group_by(year, month) %>%
   summarise('eggs' = sum(quantity))  %>%
@@ -62,11 +68,17 @@ df_table$Total <- rowSums(df_table) - df_table$Year
 
 # Add an "Eggs_per_Duck" column that averages the eggs per year per duck
 df_table <- df_table %>% 
-  mutate(Eggs_per_Duck = round(ifelse(Year == 2020, Total / 4, 
-                                ifelse(Year == 2021, (Jan + Feb + Mar + Apr + May + Jun) / 4 +
-                                         (Jul + Aug + Sep + Oct + Nov + Dec) / 3, 
-                                       (Jan + Feb + Mar + Apr + May) / 3 +
-                                         (Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 2))))
+  mutate(Eggs_per_Duck = round(
+    ifelse(Year == 2020, Total / 4, 
+           ifelse(Year == 2021, 
+                  (Jan + Feb + Mar + Apr + May + Jun) / 4 + (Jul + Aug + Sep + Oct + Nov + Dec) / 3, 
+                  ifelse(Year == 2022, (Jan + Feb + Mar + Apr + May) / 3 +
+                           (Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 2, 
+                         (Jan + Feb + Mar + Apr + May + Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 5
+                         )
+                  )
+           )
+    ))
 
 # View the table
 library(formattable)
