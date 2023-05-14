@@ -13,6 +13,7 @@ But the actual data are so much more interesting!
 ## Number of eggs laid by day (2021 and 2022)
 
 1. The R script `duck_eggs_gif.R` uses data from the file `data_eggs_laid.csv` to generate the following GIF with two plots.
+* `duck_eggs_gif.R` is compatible with R v3, but is not compatible with the newer R v4	
 
 ![GIF 2021-2022](/images/daily_duck_egg_count.gif)
 
