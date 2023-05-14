@@ -2,7 +2,31 @@
 
 ## Background
 
-We brought home four few-day-old ducklings in 2020; two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  They started laying eggs in November and I've been collecting data on the quantity of eggs ever since.  
+We brought home four few-day-old ducklings in 2020; two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  They started laying eggs in November and I've been collecting data on the quantity of eggs ever since.  Here's a table about how many (female) ducks we've had laying eggs since, by month.
+
+(NEW TABLE DRAFT) Number of Ducks by Month and Year
+
+| Duck Breeds            | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
+|------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 2020                   |
+| White Crested Ducks    | 2
+| Khaki Campbell Ducks   | 2
+|------------------------|-----------------|---------------------------------|
+| 2021  
+| White Crested Ducks    | 2
+| Khaki Campbell Ducks   | 2
+|------------------------|-----------------|---------------------------------|
+| 2022  
+| White Crested Ducks    | 2
+| Khaki Campbell Ducks   | 2
+| Khaki / Buff Mix Ducks | 2
+|------------------------|-----------------|---------------------------------|
+| 2023
+| White Crested Ducks    | 2
+| Khaki Campbell Ducks   | 2
+| Khaki / Buff Mix Ducks | 2
+|------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+
 
 According to the American Poultry Association:
 * White Crested ducks lay 100-150 eggs per year
