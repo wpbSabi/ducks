@@ -2,6 +2,7 @@
 # github: www.github.com/wpbsabi
 # Description: Takes data, adds 0 value for any missing dates, and creates one GIF with two plots
 
+library(formattable)
 library(lubridate)
 library(tidyverse)
 
@@ -14,7 +15,6 @@ df <- read_csv('data/data_eggs_laid.csv',
 
 # replace null values with 0
 df$quantity[is.na(df$quantity)] = 0
-
 
 ### Verify there are no missing days; add a zero egg count on any missing days
 # Drop the day, as this will be recalculated
@@ -81,5 +81,4 @@ df_table <- df_table %>%
     ))
 
 # View the table
-library(formattable)
 formattable(df_table)
