@@ -30,7 +30,7 @@ We brought home four few-day-old ducklings in 2020; two white crested ducks on A
 According to the American Poultry Association:
 * White Cresteds lay 100-150 eggs per year
 * Khaki Campbells lay 250-340 eggs per year
-* Buff Orpintons lay 150-220 eggs per year
+* Buff Orpingtons lay 150-220 eggs per year
 
 But the actual data are so much more interesting!
 
