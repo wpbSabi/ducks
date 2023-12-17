@@ -22,9 +22,10 @@ We brought home four few-day-old ducklings in 2020; two white crested ducks on A
 | Khaki / Buff Mix Ducks | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 3   | 3   | 
 |-------------------     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
 | 2023
-| White Crested Ducks    | 1   | 1   | 1   | 1   | 1   |
-| Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   |
-| Khaki / Buff Mix Ducks | 3   | 3   | 3   | 3   | 3   |
+| White Crested Ducks    | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
+| Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
+| Khaki / Buff Mix Ducks | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   |
+
 
 
 According to the American Poultry Association:
