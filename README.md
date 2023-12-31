@@ -43,7 +43,7 @@ But the actual data are so much more interesting!
 |------|-----------------------------------|---------------------------------|
 | 2021 | 110                               | 254                             |
 | 2022 | 109                               | 226                             |
-| 2023 | 50 (through May 14, 2023)		   | 85 (through May 14, 2023)       |
+| 2023 | 95								   | 316     						 |
 
 >* It is likely that our khakis laid less than the typically range, implying that they are not pure breeds
 >* It is likely that our cresteds laid within the expected range
