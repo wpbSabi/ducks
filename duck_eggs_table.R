@@ -68,7 +68,7 @@ df_table$Total <- rowSums(df_table) - df_table$Year
 
 # Add an "Eggs_per_Duck" column that averages the eggs per year per duck
 df_table <- df_table %>% 
-  mutate(Eggs_per_Duck = round(
+  mutate(Eggs_per_laying_duck = round(
     ifelse(Year == 2020, Total / 4, 
            ifelse(
              Year == 2021, 
