@@ -5,6 +5,7 @@
 We brought home four few-day-old ducklings in 2020; two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  They started laying eggs in November and I've been collecting data on the quantity of eggs ever since.  Here's a table about how many (female) ducks we've had laying eggs since, by month.
 
 **Number of Ducks by Month and Year**
+
 *Note that this includes young ducks even if they were not od enough to lay eggs yet*
 
 | Duck Breeds            | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
@@ -51,12 +52,17 @@ But the actual data are so much more interesting!
 
 2. The R script `duck_eggs_table.R` provides a monthly view of eggs laid.
 
+*Note that this includes young ducks even if they were not od enough to lay eggs yet*
+
 ![GIF Image](/images/eggs_per_duck.png)
 
 >* These numbers are averaged over all of the ducks.  Although on many days we can tell which whether an egg came from a khaki or crested duck, it is not always obvious. 
 >* These numbers account for the numbers of ducks we had each month, as two of our ducks passed away before 2023 (both suddently- one due to yolk coelimitis and the other to an unknown cause such eating something poisonous to ducks or flu).
 
 3. The R script `duck_eggs_gif.R` uses data from the file `data_eggs_laid.csv` to generate the following GIF with two plots.
+
+*Note that this is not updated for 2023*
+
 * `duck_eggs_gif.R` is compatible with R v3, but is not compatible with the newer R v4.
 
 ![GIF 2021-2022](/images/daily_duck_egg_count.gif)
