@@ -70,15 +70,12 @@ df_table$Total <- rowSums(df_table) - df_table$Year
 df_table <- df_table %>% 
   mutate(Eggs_per_Duck = round(
     ifelse(Year == 2020, Total / 4, 
-           ifelse(Year == 2021, 
-                  (Jan + Feb + Mar + Apr + May + Jun) / 4 + (Jul + Aug + Sep + Oct + Nov + Dec) / 3, 
-                  ifelse(Year == 2022, (Jan + Feb + Mar + Apr + May) / 3 +
-                           (Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 2, 
-                         (Jan + Feb + Mar + Apr + May + Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 5
-                         )
-                  )
-           )
-    ))
+           ifelse(
+             Year == 2021, 
+             (Jan + Feb + Mar + Apr + May + Jun) / 4 + (Jul + Aug + Sep + Oct + Nov + Dec) / 3, 
+             ifelse(Year == 2022, (Jan + Feb + Mar + Apr + May) / 3 + (Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 2, 
+                    (Jan + Feb + Mar + Apr + May + Jun + Jul) / 5 + (Aug + Sep + Oct + Nov + Dec) / 6 # 2023
+                    )))))
 
 # View the table
 formattable(df_table)
