@@ -74,7 +74,7 @@ df_table <- df_table %>%
              Year == 2021, 
              (Jan + Feb + Mar + Apr + May + Jun) / 4 + (Jul + Aug + Sep + Oct + Nov + Dec) / 3, 
              ifelse(Year == 2022, (Jan + Feb + Mar + Apr + May) / 3 + (Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 2, 
-                    (Jan + Feb + Mar + Apr + May + Jun + Jul) / 5 + (Aug + Sep + Oct + Nov + Dec) / 6 # 2023
+                    (Jan + Feb) / 2 + (Mar + Apr + May + Jun + Jul + Aug + Sep + Oct + Nov + Dec) / 5 # 2023
                     )))))
 
 # View the table
