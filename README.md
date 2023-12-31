@@ -44,15 +44,15 @@ But the actual data are so much more interesting!
 | 2022 | 109                               | 226                             |
 | 2023 | 95								   | 316     						 |
 
->* It is likely that our khakis laid less than the typically range, implying that they are not pure breeds
->* It is likely that our cresteds laid within the expected range
+>* In the first two years, it is likely that our khakis laid near the lower end of the typical range (or even lower).
+>* It is likely that our white crested ducks lay within the expected range.
 
 2. The R script `duck_eggs_table.R` provides a monthly view of eggs laid.
 
 ![GIF Image](/images/eggs_per_duck.png)
 
->* These numbers are averaged over all of the ducks.  Although on many days we can tell which whether an egg came from a khaki or crested duck, it is not always obvious. 
 >* These numbers account for the numbers of laying ducks we had each month.
+>* Therefore, this is not a straight average of eggs / # of laying ducks for the entire year.
 
 3. The R script `duck_eggs_gif.R` uses data from the file `data_eggs_laid.csv` to generate the following GIF with two plots.
 
