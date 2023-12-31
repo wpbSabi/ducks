@@ -4,15 +4,13 @@
 
 We brought home four few-day-old ducklings in 2020; two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  They started laying eggs in November and I've been collecting data on the quantity of eggs ever since.  Here's a table about how many (female) ducks we've had laying eggs since, by month.
 
-**Number of Ducks by Month and Year**
-
-*Note that this includes young ducks even if they were not od enough to lay eggs yet*
+**Number of Laying Ducks by Month and Year**
 
 | Duck Breeds            | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
 |------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 2020                   |
-| White Crested Ducks    | 0   | 0   | 0   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   |
-| Khaki Campbell Ducks   | 0   | 0   | 0   | 0   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 
+| White Crested Ducks    | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 2   | 2   |
+| Khaki Campbell Ducks   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 2   | 2   | 
 |-------------------     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
 | 2021  
 | White Crested Ducks    | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   | 2   |
@@ -51,8 +49,6 @@ But the actual data are so much more interesting!
 >* It is likely that our cresteds laid within the expected range
 
 2. The R script `duck_eggs_table.R` provides a monthly view of eggs laid.
-
-*Note that this includes young ducks even if they were not od enough to lay eggs yet*
 
 ![GIF Image](/images/eggs_per_duck.png)
 
