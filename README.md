@@ -19,12 +19,11 @@ We brought home four few-day-old ducklings in 2020; two white crested ducks on A
 | 2022  
 | White Crested Ducks    | 2   | 2   | 2   | 2   | 2   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 | Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
-| Khaki / Buff Mix Ducks | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 3   | 3   | 
 |-------------------     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
 | 2023
 | White Crested Ducks    | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 | Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
-| Khaki / Buff Mix Ducks | 3   | 3   | 3   | 3   | 3   | 3   | 4   | 4   | 4   | 4   | 4   | 4   |
+| Khaki / Buff Mix Ducks | 0   | 0   | 3   | 3   | 3   | 3   | 4   | 4   | 4   | 4   | 4   | 4   |
 
 
 
@@ -53,7 +52,7 @@ But the actual data are so much more interesting!
 ![GIF Image](/images/eggs_per_duck.png)
 
 >* These numbers are averaged over all of the ducks.  Although on many days we can tell which whether an egg came from a khaki or crested duck, it is not always obvious. 
->* These numbers account for the numbers of ducks we had each month, as two of our ducks passed away before 2023 (both suddently- one due to yolk coelimitis and the other to an unknown cause such eating something poisonous to ducks or flu).
+>* These numbers account for the numbers of laying ducks we had each month.
 
 3. The R script `duck_eggs_gif.R` uses data from the file `data_eggs_laid.csv` to generate the following GIF with two plots.
 
