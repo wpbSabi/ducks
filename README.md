@@ -5,6 +5,7 @@
 We brought home four few-day-old ducklings in 2020; two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  They started laying eggs in November and I've been collecting data on the quantity of eggs ever since.  Here's a table about how many (female) ducks we've had laying eggs since, by month.
 
 **Number of Ducks by Month and Year**
+*Note that this includes young ducks even if they were not od enough to lay eggs yet*
 
 | Duck Breeds            | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
 |------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
