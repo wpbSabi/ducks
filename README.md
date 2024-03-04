@@ -1,5 +1,9 @@
 # Duck eggs laid in our garden 🦆🥚
 
+To run R scripts, the best practice is to first install R and then install RStudio.
+* To Run the script that creates the year-by-year duck eggs table, open `duck_eggs_table.R` in RStudio.
+* To Run the script that creates GIF of eggs layed by day, open `duck_eggs_gif.R` in RStudio.
+
 ## Background
 
 We brought home four few-day-old ducklings in 2020; two white crested ducks on April 10th and two khaki campbell ducks on May 14th.  They started laying eggs in November and I've been collecting data on the quantity of eggs ever since.  Here's a table about how many (female) ducks we've had laying eggs since, by month.
