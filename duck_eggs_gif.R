@@ -40,7 +40,7 @@ df$ducks[df$d >= as.Date('2022-05-31')] <- 2
 p1 <- ggplot() +
   geom_line(data = df,
             aes(x = as.Date(day, origin = '2020-04-08'), y = quantity),
-            size = 1,
+            linewidth = 1,
             color = df$ducks) +
             # color = 'pink') + 
   geom_point(data = df,
@@ -51,7 +51,7 @@ p1 <- ggplot() +
              color = 'black') +
   scale_x_date(date_labels = '%Y-%b', breaks = 'month') +
   theme_minimal() +
-  theme(plot.title = element_textbox_simple(size = 15, 
+  theme(plot.title = element_textbox_simple(linewidth = 15, 
                                             lineheight = 1, 
                                             padding = margin(5.5, 5.5, 5.5, 5.5),
                                             margin = margin(0, 0, 5.5, 0)),
@@ -73,7 +73,7 @@ p1 <- ggplot() +
 p2 <- ggplot() +
   geom_line(data = df, 
             aes(x = as.Date(day, origin = '2020-04-08'), y = cumulative),
-            size = 2,
+            linewidth = 2,
             color = df$ducks) +
             # color = 'pink') + 
   geom_point(data = df,
@@ -85,7 +85,7 @@ p2 <- ggplot() +
   scale_x_date(date_labels = '%Y-%b', breaks = 'month') +
   theme_minimal() +
   theme(plot.title = element_textbox(hjust = 0.5,
-                                     size = 15, 
+                                     linewidth = 15, 
                                      padding=margin(5.5, 5.5, 5.5, 5.5)),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
@@ -112,13 +112,18 @@ b_gif <- animate(p2,
                  end_pause = 10,
                  width = 700, 
                  height = 500)
-a_mgif <- image_read(a_gif)
-b_mgif <- image_read(b_gif)
-new_gif <- image_append(c(a_mgif[1], b_mgif[1]))
-for(i in 2:100){
-  combined <- image_append(c(a_mgif[i], b_mgif[i]))
-  new_gif <- c(new_gif, combined)
-}
+
+# Newer package versions are conflicting with the ability to combine GIFs
+# Instead, for now please choose which GIF you'd like to create
+
+# a_mgif <- image_read(a_gif)
+# b_mgif <- image_read(b_gif)
+# new_gif <- image_append(c(a_mgif[1], b_mgif[1]))
+# for(i in 2:100){
+#   combined <- image_append(c(a_mgif[i], b_mgif[i]))
+#   new_gif <- c(new_gif, combined)
+# }
 
 anim_save(filename = 'images/daily_duck_egg_count.gif', 
-          animation = new_gif)
+          animation = a_gif)
+          # animation = new_gif)
