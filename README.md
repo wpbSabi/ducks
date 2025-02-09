@@ -28,7 +28,11 @@ We brought home four few-day-old ducklings in 2020; two white crested ducks on A
 | White Crested Ducks    | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 | Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 | Khaki / Buff Mix Ducks | 0   | 0   | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 3   |
-
+|-------------------	 | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
+| 2024
+| White Crested Ducks    | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
+| Khaki Campbell Ducks   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
+| Khaki/Buff/Crested Mix | 3   | 3   | 4   | 4   | 4   | 4   | 4   | 4   | 4   | 4   | 4   | 4   |
 
 
 According to the American Poultry Association:
@@ -42,11 +46,12 @@ But the actual data are so much more interesting!
 
 1. The following data points can provide some inference regarding the number of eggs laid by khakis versus crested ducks.
 
-| Year | Days where every duck laid an egg | Days with at least one egg laid |
-|------|-----------------------------------|---------------------------------|
-| 2021 | 110                               | 254                             |
-| 2022 | 109                               | 226                             |
-| 2023 | 95								   | 316     						 |
+| Year | Days where every duck laid an egg | Days with at least one egg laid | Eggs per laying duck |
+|------|-----------------------------------|---------------------------------|----------------------|
+| 2021 | 110                               | 254                             | 194                  |
+| 2022 | 109                               | 226                             | 173                  |
+| 2023 | 95								   | 316     						 | 247                  |
+| 2024 | 52								   | 366							 | 284                  |
 
 >* In the first two years, it is likely that our khakis laid near the lower end of the typical range (or even lower).
 >* It is likely that our white crested ducks lay within the expected range.
